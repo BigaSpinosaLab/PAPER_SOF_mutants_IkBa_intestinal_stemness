@@ -1,0 +1,29 @@
+#!/bin/bash
+
+################################################################################
+##       Create Project directory tree for an standard RNA-seq analysis with STAR
+################################################################################
+
+# Project directory tree consists of (inside main project folder):
+#   
+#    .- raw_data: Includes raw data (FASTQ files). Subdirs: FASTQC and MULTIQC
+#    .- trimmed_data: Includes trimmed data (from i.e. trimgalore). Subdirs: FASTQC and MULTIQC
+#    .- STAR_align: Includes output from STAR alignment. Subdirs:  Index, BAM, Other_results
+#    .- quantification: Includes gene quantification from featureCounts
+#    .- scripts: Includes all scripts used to analyze the data
+#    .- summary: Includes an html report generated with MultiQC with a summary of all
+#                previous steps
+
+
+# IMPORTANT REMARK: It is assumed that an initial raw_data folder has been previously
+#         created during the data download process.
+
+#=========================
+# User defined parameters
+#=========================
+
+# SPECIFY full path to project directory in the cluster 
+PROJECTDIR="/projects/cancer/RNAseq_INDs_ikBa_DANI"
+
+mkdir -p $PROJECTDIR/raw_data/{FASTQC,MULTIQC}
+mkdir -p $PROJECTDIR/{trimmed_data/{FASTQC,MULTIQC},STAR_align/{Index,BAM,Other_results},quantification,scripts,summary}
