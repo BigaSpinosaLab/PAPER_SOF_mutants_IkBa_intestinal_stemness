@@ -18,4 +18,12 @@ NOTE: Gene annotation files are required. For this analysis, these were retrieve
 
 ## ChIPseq data analysis folder
 
-XXXXX
+Scripts required to reproduce the complete ChIPseq data analysis on FLAG IkBa samples (two different CRC cell lines), specifically:
+
+- Data preprocessing: from FASTQ to required BAM files. Scripts from 0 to 5.
+- Downstream analysis: (i) Peak calling with MACS2: Script 7, (ii) BigWig generation: Script 6 and (iii) Called peaks annotations and consensus peakset per cell line: Script 8.
+- OTHER: other scripts are available related to QC inspection and plotting samples behaviour.
+
+To conduct the complete analysis, original FASTQ files are required. Please check GEO accession no. GSE271349 [https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE271349]. All required scripts were executed using Singularity images (v3.8.3) per required tool.
+
+NOTE: Gene annotation files are required. For this analysis, these were retrieved from Ensembl (release 106, hg38).
