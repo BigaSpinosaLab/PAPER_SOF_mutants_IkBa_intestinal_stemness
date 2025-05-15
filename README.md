@@ -1,4 +1,4 @@
-https://doi.org/10.5281/zenodo.15423406
+<a href="https://doi.org/10.5281/zenodo.15423406"><img src="https://zenodo.org/badge/822960696.svg" alt="DOI"></a>
 
 # IkBa Separation of Function (SOF) mutants role intestinal stemness
 
