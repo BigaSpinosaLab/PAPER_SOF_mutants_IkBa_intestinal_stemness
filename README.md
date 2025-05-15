@@ -1,3 +1,5 @@
+https://doi.org/10.5281/zenodo.15423406
+
 # IkBa Separation of Function (SOF) mutants role intestinal stemness
 
 This repository includes scripts required for the bulk RNAseq (both datasets included in the paper) and ChIPseq IkBa data analysis included in Alvarez-Villanueva et al. 2025. All scripts include comments so they are self-explanatory.
